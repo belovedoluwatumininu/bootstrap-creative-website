@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700;800;900&display=swap');
+
+:root {
+    --white: #ffffff;
+    --body: #545d6d;
+    --dark: #202631;
+    --border-color: rgba(0, 0, 0, 0.10);
+    --border-width: 1px;
+    --border-radius: 30px;
+}
+body{
+    font-family: 'barlow' ,sans-serif;
+    line-height: 1.8;
+    color:var(--body);
+    box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: 800;
+color: var(--dark);
+}
+img{
+    width: 100%;
+
+}
+a{
+    color: var(--body);
+    text-decoration: none;
+    font-weight: 700;
+    transition: all 0.4s ease;
+}
+a:hover{
+    color:var(--dark);
+}
+.navbar{
+    position: absolute;
+    width: 100%;
+    padding: 16px 0;
+}
+.navbar .navbar-brand{
+    font-size: 24px;
+    text-transform: uppercase;
+    z-index:6;
+
+}
+.navbar .navbar-nav{
+    margin-left: 20px;
+}
+.navbar .navbar-nav .nav-link{
+    text-transform: uppercase;
+    font-size: 14px;
+}
+ .social-link a{
+  background-color: var(--white); 
+  width: 36px;
+  height: 36px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  margin-left: 5px;
+  
+
+}
+
+.social-link{
+    margin-right: 30px;
+}
+
+section{
+    padding-top: 170px;
+    padding-bottom: 170px;
+
+}
+
+@media(max-width:992px){
+ .navbar{
+    background-color: var(--body);
+  }
+}
+
+
+
+/* hero */
+#hero {
+    background: url("../img/cover_1.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    background-attachment: fixed;
+}
+#hero h1, #hero p{
+    color: var(--white);
+}
+#hero h1{
+    font-weight: 900;
+}
+#hero p{
+    max-width: 450px;
+    font-size: 18px;
+}
+.btn{
+    padding: 20px 44px;
+    border: 2px solid;
+    border-radius: 100px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+}
+
+/* intro */
+.intro{
+    margin-bottom: 60px;
+    /* text-align: center; */
+
+}
+.intro .hr-line{
+    width: 60px;
+    height: 2px;
+    background: var(--dark);
+    display: inline-flex;
+
+    
+}
+.hr-line.about{
+    height: 4px;
+}
+.intro h1{
+    font-weight:900;
+    text-transform: uppercase;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+.intro p{
+    max-width: 500px;
+    /* display: inline-block; */
+}
+.intro.intro-dark p{
+    color: white;
+}
+ /* services */
+ .services{
+    display: flex;
+    flex:none;
+    border: var(--border-width) solid var(--border-color) ;
+    padding: 32px;
+    justify-content: center;
+    border-radius: var(--border-radius);
+ }
+ .icon{
+    display: flex;
+    flex: 0 0 auto;
+    width:100px;
+    height: 100px;
+    background-color: var(--dark);
+    justify-content: center;
+    align-items: center;
+    border-radius:var(--border-radius);
+    margin-right: 16px;
+}
+ .icon i{
+    font-size:34px;
+    color: var(--white);
+
+ }
+ .services h4{
+  line-height: 1.8;
+ }
+ .services p{
+    max-width: 400px;
+    line-height: 1.8;
+ }
+.link-arrow {
+    text-transform: uppercase;
+    display: inline-flex;
+    align-items: center;
+ }
+ /* .link-arrow.link-arrow-dark{
+    color: #545d6d;
+ } */
+ .link-arrow.link-arrow-dark:hover{
+    color: white;
+ }
+ .link-arrow i {
+    transition: all 0.4s ease;
+ }
+ .link-arrow:hover i{
+    transform: translate(5px, -5px);
+ }
+ #work{
+    background-color: var(--dark);
+ }
+ #work h1{
+    color: white;
+ }
+ #work .hr-line{
+    background-color: white;
+ }
+ .project h3{
+   color: white;
+   margin-top: 24px;
+ }
+ .project .image-wrapper{
+    overflow: hidden;
+    border-radius: var(--border-radius);
+ }
+.project .image-wrapper img{ 
+    transform: scale(1.1);
+    transition: all 0.4s ease;
+    
+ } 
+ .project:hover .image-wrapper img{
+    transform: scale(1);
+ }
+ /* .project{
+    margin-top: 50px;
+ } */
+/* #about h1{
+    font-weight: 700;
+    max-width: 400px; */
+
+#about p{
+   /* max-width: 450px; */
+  line-height: 1.8;
+}
+.image{
+    overflow: hidden;
+    border-radius: var(--border-radius);
+}
+/* #testimonials h1{
+    max-width: 400px;
+    margin: 16px auto;
+} */
+#testimonials{
+    background-color: #f8f8f8;
+}
+ .review{
+    border: var(--border-width) solid var(--border-color);
+    border-radius: var(--border-radius);
+    padding: 32px;
+    background-color: white;
+ }
+ .review .person{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+ }
+ .review p{
+    border-bottom: var(--border-width) solid var(--border-color) ;
+    padding-bottom: 16px;
+ }
+ .person p{
+    margin-bottom: 5px;
+    
+ }
+ .review .person img{
+    width: unset;
+    border-radius: var(--border-radius);
+
+ }
+ .review .star{
+    align-items: flex-end;
+    color: orange;
+ }
+ /* #contact h1{
+   max-width: 500px;
+ } */
+ #contact form{
+    padding:32px;
+    border: var(--border-width) solid var(--border-color);
+    border-radius: var(--border-radius);
+
+ }
+ #contact form .form-control{
+    border: none;
+    border-radius: var(--border-radius);
+    background-color: #f8f8f8;
+    padding-left: 18px;
+    
+   
+ }
+ #contact form input.form-control{
+    height: 52px;
+   
+ }
+ /* #contact .foms{
+    margin: 0 auto;
+ } */
+ #insta-post{
+    position: relative;
+ }
+.insta-follow{
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    height: 90px;
+    width: 90px;
+    color: white;
+    background-color:var(--dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 44px;
+    border-radius: var(--border-radius);
+    transform: translate(-50%, -50%);
+    opacity: 0;
+ }
+.insta-follow:hover{
+    background-color: white;
+ }
+ #insta-post:hover .insta-follow{
+    opacity: 1;
+    top:50%;
+ } 
+ /* #footer .social-link a{
+    border: var(--border-width) solid var(--border-color);
+    padding:10px;
+    border-radius: 100%;
+    display: inline-flex;
+    justify-content: center;
+    height: 36px;
+    width: 36px;
+    align-items: center;
+    
+ } */
+ #footer .social-link a{
+    border: var(--border-width) solid var(--border-color);
+ }
+ #footer .footer-top{
+    padding-bottom: 30px;
+    border-bottom: var(--border-width) solid var(--border-color);
+ }
+ #footer .footer-bottom{
+    padding-top: 30px;
+ } 
